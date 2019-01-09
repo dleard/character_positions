@@ -10,9 +10,10 @@ function charPosition(string) {
             letters[string.charAt(i)].count = 1;
             letters[string.charAt(i)].pos = [i];
 		}
-	}
+    }
+    delete letters[' '];
 	
 	console.log(letters);
 }
 
-charPosition('abcdefffggg');
+charPosition('abc defffggg');
